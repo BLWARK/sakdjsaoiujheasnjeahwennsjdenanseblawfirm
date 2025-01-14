@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
 import Navbar from "@/components/navigation/Navbar";
 import Footer from "@/components/footer/Footer"
 import "./globals.css";
@@ -11,11 +11,7 @@ const poppins = Poppins({
   weight: ["400", "500", "600", "700", "800", "900"],
 });
 
-const playfairDisplay = Playfair_Display({
-  variable: "--font-playfair-display",
-  subsets: ["latin", "latin-ext"],
-  weight: ["400", "500", "600", "700", "800", "900"],
-});
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
