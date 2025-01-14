@@ -11,7 +11,7 @@ const HeroSection = () => {
           alt="Law Firm Hero"
           layout="fill"
           objectFit="cover"
-          className="zoom-out opacity-50"
+          className="zoom-out "
         />
       </div>
 
