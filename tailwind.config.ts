@@ -9,8 +9,15 @@ export default {
   theme: {
     extend: {
       colors: {
+        main: "#D1AF89",        // Warna utama
+        secondary: "#f4f4f4",   // Warna sekunder
+        hover: "#D4365F",       // Warna saat hover
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      fontFamily: {
+        playfair: ["'Playfair Display'", "serif"], // Font untuk judul
+        poppins: ["'Poppins'", "sans-serif"],      // Font untuk isi
       },
     },
   },
