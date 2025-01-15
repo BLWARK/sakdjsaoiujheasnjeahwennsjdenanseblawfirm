@@ -6,7 +6,7 @@ import WhyUs from "@/components/page-components/WhyUs-sect/WhyUs"
 import Teams from "@/components/page-components/Our-Teams/Teams"
 import SuccesCase from "@/components/page-components/success-case/SuccessCase"
 import Layanan from "@/components/page-components/Layanan/Layanan";
-import CaraPembayaran from "@/components/page-components/cara-pembayaran/CaraPembayaran"
+
 import CTA from "@/components/page-components/call-to-action/CallToAction"
 
 const Page = () => {
@@ -24,7 +24,7 @@ const Page = () => {
        <Teams/>
        <SuccesCase/>
        <Layanan/>
-       <CaraPembayaran/>
+       {/* <CaraPembayaran/> */}
        <CTA/>
 
 

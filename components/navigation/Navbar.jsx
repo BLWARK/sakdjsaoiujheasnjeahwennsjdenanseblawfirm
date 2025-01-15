@@ -42,7 +42,7 @@ const Navbar = () => {
           <button onClick={() => scrollToSection("team")} className="hover:text-main transition duration-300">Team</button>
           <button onClick={() => scrollToSection("case")} className="hover:text-main transition duration-300">Case</button>
           <button onClick={() => scrollToSection("layanan")} className="hover:text-main transition duration-300">Layanan</button>
-          <button onClick={() => scrollToSection("pembayaran")} className="hover:text-main transition duration-300">Pembayaran</button>
+          {/* <button onClick={() => scrollToSection("pembayaran")} className="hover:text-main transition duration-300">Pembayaran</button> */}
         </div>
 
         {/* Mobile Menu Button */}
@@ -62,7 +62,7 @@ const Navbar = () => {
             <button onClick={() => scrollToSection("team")} className="text-main hover:text-main transition duration-300">Team</button>
             <button onClick={() => scrollToSection("case")} className="text-main hover:text-main transition duration-300">Case</button>
             <button onClick={() => scrollToSection("layanan")} className="text-main hover:text-main transition duration-300">Layanan</button>
-            <button onClick={() => scrollToSection("pembayaran")} className="text-main hover:text-main transition duration-300">Pembayaran</button>
+            {/* <button onClick={() => scrollToSection("pembayaran")} className="text-main hover:text-main transition duration-300">Pembayaran</button> */}
             <div className=" items-center 2xl:hidden xl:hidden md:hidden block">
               <Image src="/Logo XYZ Law Firm.png" alt="Law Firm Logo" width={70} height={70} />
             </div>
