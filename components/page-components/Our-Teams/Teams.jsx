@@ -1,6 +1,8 @@
 "use client"
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // Data Tim
 const teamMembers = [
@@ -20,6 +22,11 @@ const Teams = () => {
     }, 3000);
     return () => clearInterval(interval);
   }, []);
+
+
+  useEffect(() => {
+      AOS.init({ duration: 1000, once: true });
+    }, []);
 
   // Swipe functionality
   const handleTouchStart = (e) => {
@@ -45,7 +52,7 @@ const Teams = () => {
   };
 
   return (
-    <section id="team" className="w-full bg-gray-100 2xl:py-28 py-10">
+    <section data-aos="fade-up"  id="team" className="w-full bg-gray-100 2xl:py-28 py-10">
       <div className="container mx-auto px-6">
         {/* Judul */}
         <div className="text-center mb-12">
@@ -59,11 +66,11 @@ const Teams = () => {
         </div>
 
         {/* Grid untuk Desktop */}
-        <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 2xl:px-0 xl:px-0 px-10">
+        <div  className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 2xl:px-0 xl:px-0 px-10">
           {teamMembers.map((member, index) => (
             <div key={index} className="flex flex-col items-center">
               {/* Foto */}
-              <div className="relative 2xl:w-[470px] 2xl:h-[470px] w-[350px] h-[350px]">
+              <div data-aos="flip-right" className="relative 2xl:w-[470px] 2xl:h-[470px] w-[350px] h-[350px]">
                 <Image
                   src="/PD.png" // Ganti dengan path gambar Anda
                   alt={member.name}

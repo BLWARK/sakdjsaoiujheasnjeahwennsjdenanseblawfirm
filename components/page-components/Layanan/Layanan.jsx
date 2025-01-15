@@ -1,7 +1,11 @@
 "use client"
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const layananData = {
+
+  
   Litigasi: (
     <>
       <h4 className="2xl:text-2xl xl:text-2xl lg:text-2xl md:text-xl text-2xl font-bold mb-2">Jasa Pelayanan Hukum Litigasi</h4>
@@ -82,10 +86,14 @@ const layananData = {
 };
 
 const Layanan = () => {
+
+  useEffect(() => {
+      AOS.init({ duration: 1000, once: true });
+    }, []);
   const [selected, setSelected] = useState("Litigasi");
 
   return (
-    <section id="layanan" className="w-full bg-gradient-to-tr from-black to-emerald-800 py-24">
+    <section data-aos="fade-up" id="layanan" className="w-full bg-gradient-to-tr from-black to-emerald-800 py-24">
       <div className="container mx-auto px-6 text-center">
         {/* Judul dan Subjudul */}
         <h2 className="text-4xl font-playfair text-main font-bold mb-4">Layanan Kami</h2>

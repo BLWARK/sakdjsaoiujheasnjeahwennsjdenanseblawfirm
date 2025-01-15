@@ -1,5 +1,8 @@
-import React from "react";
+"use client"
+import React, { useEffect } from "react";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const paymentMethods = [
   {
@@ -20,8 +23,13 @@ const paymentMethods = [
 ];
 
 const CaraPembayaran = () => {
+
+useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   return (
-    <section id="pembayaran" className="w-full bg-gray-100 py-16">
+    <section data-aos="fade-up" id="pembayaran" className="w-full bg-gray-100 py-16">
       <div className="container mx-auto px-6 text-center">
         {/* Judul Section */}
         <h2 className="text-4xl font-playfair font-bold mb-8">Tata Cara Pembayaran</h2>

@@ -19,8 +19,8 @@ const Services = () => {
   }, []);
 
   return (
-    <section id="services" className="w-full bg-gradient-to-tr from-black to-emerald-800 py-16 text-main flex flex-col justify-center items-center">
-      <div data-aos="fade-up"  className="2xl:text-center text-left mb-12">
+    <section data-aos="fade-up" id="services" className="w-full bg-gradient-to-tr from-black to-emerald-800 py-16 text-main flex flex-col justify-center items-center">
+      <div   className="2xl:text-center text-left mb-12">
         <h1 className="2xl:text-5xl xl:text-5xl lg:text-4xl md:text-4xl text-3xl font-playfair font-bold mb-4">Area Praktik Kami</h1>
         <p className="2xl:text-lg text-xs text-white">
           Discover the range of legal services we offer to support you.
