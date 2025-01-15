@@ -7,7 +7,7 @@ const CallToAction = () => {
       <div className="container mx-auto px-6 flex flex-col xl:flex-row md:flex-row 2xl:items-center items-start justify-between">
         {/* Bagian Kiri: Teks */}
         <div className="mb-4 md:mb-0">
-          <h2 className="2xl:text-4xl text-2xl font-bold mb-2">Konsultasikan Permasalahan Anda</h2>
+          <h2 className="2xl:text-4xl text-2xl text-main font-bold mb-2">Konsultasikan Permasalahan Anda</h2>
           <p className="text-gray-300 2xl:text-base text-xs">
             Kami siap membantu menyelesaikan masalah hukum Anda. Dapatkan konsultasi gratis
             dengan tim ahli kami.
