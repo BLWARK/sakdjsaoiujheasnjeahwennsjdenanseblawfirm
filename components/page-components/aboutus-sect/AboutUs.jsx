@@ -34,7 +34,7 @@ const AboutUs = () => {
           <h2 className="2xl:text-[42px] xl:text-[42px] lg:text-[36px] md:text-[36px] text-[36px] font-bold text-main ">
             XYZ LAW FIRM
           </h2>
-          <p className="text-white py-8 2xl:text-xl xl:text-base lg:text-base md:text-sm  text-xs">
+          <p className="text-white py-8 2xl:text-base xl:text-base lg:text-base md:text-sm  text-xs">
             XYZ Law Firm didirikan pada tahun 2024 dengan semangat baru untuk
             memberikan layanan hukum yang berkualitas dan terpercaya. Meskipun
             tergolong baru, firma ini didukung oleh tim pengacara yang telah
