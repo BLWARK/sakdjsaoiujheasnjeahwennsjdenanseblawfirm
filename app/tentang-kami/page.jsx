@@ -23,7 +23,7 @@ const AboutPage = () => {
           {/* Foto */}
           <div className="relative md:w-1/2 w-full  md:h-[700px] h-[500px] mb-8 md:mb-0">
             <Image
-              src="/PD.png" // Ganti dengan path gambar Anda
+              src="/About Us-min.png" // Ganti dengan path gambar Anda
               alt="Tentang Kami"
               fill
               className="object-contain "
