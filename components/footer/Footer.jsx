@@ -69,7 +69,7 @@ const Footer = () => {
 
           {/* Hukum Politik */}
           <div className="flex flex-col space-y-4">
-            <h2 className="text-lg font-bold text-main">Hukum Politik</h2>
+            <h2 className="text-lg font-bold text-main">Hukum Publik</h2>
             <ul className="space-y-2">
               <li><a href="/area-praktik/hukum-publik/hukum-pidana" className="hover:text-main transition">Hukum Pidana</a></li>
               <li><a href="/area-praktik/hukum-publik/hukum-tata-usaha-negara" className="hover:text-main transition">Hukum Tata Usaha Negara</a></li>
