@@ -21,7 +21,7 @@ const paymentMethods = [
 
 const CaraPembayaran = () => {
   return (
-    <section className="w-full bg-gray-100 py-16">
+    <section id="pembayaran" className="w-full bg-gray-100 py-16">
       <div className="container mx-auto px-6 text-center">
         {/* Judul Section */}
         <h2 className="text-4xl font-playfair font-bold mb-8">Tata Cara Pembayaran</h2>

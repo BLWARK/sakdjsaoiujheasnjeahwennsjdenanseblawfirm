@@ -4,7 +4,7 @@ import successCases from "@/data/successCases";
 
 const SuccessCase = () => {
   return (
-    <section className="w-full bg-gray-100 py-14">
+    <section id="case" className="w-full bg-gray-100 py-14">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-playfair font-bold mb-6 text-center">Kasus-Kasus yang Berhasil</h2>
         <p className="text-gray-600 text-center mb-12">

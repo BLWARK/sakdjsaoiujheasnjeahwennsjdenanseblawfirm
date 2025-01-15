@@ -10,7 +10,7 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <section className="w-full 2xl:h-screen h-full flex items-center justify-center bg-gradient-to-tr from-black to-emerald-800">
+    <section id="tentang-kami" className="w-full 2xl:h-screen h-full flex items-center justify-center bg-gradient-to-tr from-black to-emerald-800">
       <div className="container mx-auto px-10 flex flex-col md:flex-row items-center">
         {/* Left Side - Image */}
         <div
@@ -50,9 +50,9 @@ const AboutUs = () => {
           </p>
           
 
-          <button className="border-[1px] border-main 2xl:px-8 2xl:py-4 px-8 py-2 rounded hover:bg-main hover:text-white text-main transition duration-300 mb-10">
+          <a href="/tentang-kami" className="border-[1px] border-main 2xl:px-8 2xl:py-4 px-8 py-2 rounded hover:bg-main hover:text-white text-main transition duration-300 mb-10">
             READ MORE
-          </button>
+          </a>
         </div>
       </div>
     </section>

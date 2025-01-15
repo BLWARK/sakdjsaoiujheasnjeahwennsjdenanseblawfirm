@@ -85,7 +85,7 @@ const Layanan = () => {
   const [selected, setSelected] = useState("Litigasi");
 
   return (
-    <section className="w-full bg-gradient-to-tr from-black to-emerald-800 py-24">
+    <section id="layanan" className="w-full bg-gradient-to-tr from-black to-emerald-800 py-24">
       <div className="container mx-auto px-6 text-center">
         {/* Judul dan Subjudul */}
         <h2 className="text-4xl font-playfair text-main font-bold mb-4">Layanan Kami</h2>
@@ -111,7 +111,7 @@ const Layanan = () => {
         </div>
 
         {/* Konten Layanan */}
-        <div className="bg-white p-10 rounded-lg shadow-lg text-left">
+        <div className="bg-white 2xl:p-10 xl:p-10 lg:p-10 md:p-5 p-5 rounded-lg shadow-lg text-left">
           {layananData[selected]}
         </div>
       </div>

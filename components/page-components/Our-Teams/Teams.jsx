@@ -4,9 +4,9 @@ import Image from "next/image";
 
 // Data Tim
 const teamMembers = [
-  { name: "Ian Savage", role: "Lawyer" },
-  { name: "Michael Oykhman", role: "Lawyer" },
-  { name: "Emma Brown", role: "Lawyer" },
+  { name: "Indah Sariwati", role: "Lawyer" },
+  { name: "Tariyanto", role: "Lawyer" },
+  { name: "Wahyudin", role: "Lawyer" },
 ];
 
 const Teams = () => {
@@ -45,7 +45,7 @@ const Teams = () => {
   };
 
   return (
-    <section className="w-full bg-gray-100 2xl:py-28 py-10">
+    <section id="team" className="w-full bg-gray-100 2xl:py-28 py-10">
       <div className="container mx-auto px-6">
         {/* Judul */}
         <div className="text-center mb-12">
