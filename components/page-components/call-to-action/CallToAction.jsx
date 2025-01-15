@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 
 const CallToAction = () => {
@@ -15,12 +16,13 @@ const CallToAction = () => {
 
         {/* Bagian Kanan: Tombol */}
         <div>
-          <a
-            href="#contact"
+          <button
+            
             className="bg-main hover:bg-hover text-white px-6 py-3 rounded-lg font-semibold transition flex 2xl:mt-0 mt-5 "
+            onClick={() => window.open("https://wa.me/+6281388522219", "_blank", "noopener,noreferrer")}
           >
             Hubungi Kami
-          </a>
+          </button>
         </div>
       </div>
     </section>

@@ -22,7 +22,7 @@ const Footer = () => {
           <div className="flex flex-col space-y-4">
             <Image src="/Logo XYZ Law Firm.png" alt="Law Firm Logo" width={150} height={150} />
             <p>Wisma Aria, Lantai 3, Ruang 302, Jl Hos Cokroaminoto No. 81 Menteng, Jakarta Pusat</p>
-            <p>Telp: +62 123 4567 890</p>
+            <p>Telp: +62 813-8852-2219</p>
           </div>
 
           {/* Navigasi */}

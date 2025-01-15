@@ -80,6 +80,7 @@ const HeroSection = () => {
             animation: "slide-up 1.5s ease-out forwards",
             animationDelay: "2.0s",
           }}
+          onClick={() => window.open("https://wa.me/+6281388522219", "_blank", "noopener,noreferrer")}
         >
           Hubungi Kami
         </button>
