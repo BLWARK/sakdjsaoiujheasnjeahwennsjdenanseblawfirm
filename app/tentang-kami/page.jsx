@@ -7,7 +7,7 @@ const AboutPage = () => {
       {/* Banner */}
       <div className="relative w-full h-[400px]">
         <Image
-          src="/hegobgtest2.webp" // Ganti dengan path gambar banner Anda
+          src="/Herobg1.webp" // Ganti dengan path gambar banner Anda
           alt="Banner Tentang Kami"
           fill
           className="object-cover"

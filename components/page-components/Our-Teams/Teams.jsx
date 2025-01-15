@@ -1,14 +1,14 @@
-"use client"
+"use client";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// Data Tim
+// Data Tim dengan gambar berbeda
 const teamMembers = [
-  { name: "Indah Sariwati", role: "Lawyer" },
-  { name: "Tariyanto", role: "Lawyer" },
-  { name: "Wahyudin", role: "Lawyer" },
+  { name: "Indah Sariwati", role: "Lawyer", image: "/Bu indah-min.png" },
+  { name: "Tariyanto", role: "Lawyer", image: "/Antok-min.png" },
+  { name: "Wahyudin", role: "Lawyer", image: "/Wahyudin-min.png" },
 ];
 
 const Teams = () => {
@@ -23,10 +23,10 @@ const Teams = () => {
     return () => clearInterval(interval);
   }, []);
 
-
+  // Inisialisasi AOS
   useEffect(() => {
-      AOS.init({ duration: 1000, once: true });
-    }, []);
+    AOS.init({ duration: 1000, once: true });
+  }, []);
 
   // Swipe functionality
   const handleTouchStart = (e) => {
@@ -52,13 +52,11 @@ const Teams = () => {
   };
 
   return (
-    <section data-aos="fade-up"  id="team" className="w-full bg-gray-100 2xl:py-28 py-10">
+    <section data-aos="fade-up" id="team" className="w-full bg-gray-100 2xl:py-28 py-10">
       <div className="container mx-auto px-6">
         {/* Judul */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-playfair font-bold mb-4">
-            Tim Pengacara Kami
-          </h2>
+          <h2 className="text-4xl font-playfair font-bold mb-4">Tim Pengacara Kami</h2>
           <p className="text-gray-600">
             Dengan pengalaman, dedikasi, dan keahlian, kami siap memberikan
             solusi hukum terbaik untuk memenuhi kebutuhan Anda.
@@ -66,13 +64,13 @@ const Teams = () => {
         </div>
 
         {/* Grid untuk Desktop */}
-        <div  className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 2xl:px-0 xl:px-0 px-10">
+        <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 2xl:px-0 xl:px-0 px-10">
           {teamMembers.map((member, index) => (
             <div key={index} className="flex flex-col items-center">
               {/* Foto */}
               <div data-aos="flip-right" className="relative 2xl:w-[470px] 2xl:h-[470px] w-[350px] h-[350px]">
                 <Image
-                  src="/PD.png" // Ganti dengan path gambar Anda
+                  src={member.image} // Gunakan gambar dari data
                   alt={member.name}
                   fill
                   className="object-contain rounded-lg bg-gradient-to-tr from-black to-emerald-800"
@@ -100,17 +98,14 @@ const Teams = () => {
             }}
           >
             {teamMembers.map((member, index) => (
-              <div
-                key={index}
-                className="flex flex-col items-center w-full shrink-0"
-              >
+              <div key={index} className="flex flex-col items-center w-full shrink-0">
                 {/* Foto */}
-                <div className="relative w-[350px] h-[350px] ">
+                <div className="relative w-[350px] h-[350px]">
                   <Image
-                    src="/PD.png" // Ganti dengan path gambar Anda
+                    src={member.image} // Gunakan gambar dari data
                     alt={member.name}
                     fill
-                    className="object-contain rounded-lg bg-gradient-to-tr from-black to-emerald-800"
+                    className="object-cover rounded-lg bg-gradient-to-tr from-black to-emerald-800"
                   />
                 </div>
                 {/* Nama dan Peran */}

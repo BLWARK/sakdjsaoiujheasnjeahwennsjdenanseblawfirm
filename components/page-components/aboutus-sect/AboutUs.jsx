@@ -18,7 +18,7 @@ const AboutUs = () => {
           data-aos="fade-right" // Animasi dari kanan ke kiri
         >
           <Image
-            src="/PD.png"
+            src="/About Us-min.png"
             alt="Professional Lawyer"
             width={500}
             height={700}

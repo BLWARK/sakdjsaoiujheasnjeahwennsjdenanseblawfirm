@@ -24,9 +24,9 @@ const page = () => {
           className="object-cover"
         />
         <div className="absolute inset-0 bg-black/70 flex items-center justify-center">
-          {/* <h1 className="2xl:text-4xl text-xl font-bold text-white">
+          <h1 className="2xl:text-5xl text-xl font-bold text-main">
             Sengketa Waris
-          </h1> */}
+          </h1>
         </div>
       </div>
 

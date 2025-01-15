@@ -4,9 +4,10 @@ import Image from "next/image";
 
 const HeroSection = () => {
   const images = [
-    "/hegobgtest2.webp",
-    "/herobgtest.webp",
-    "/herobgtest3.webp",
+    "/Herobg1.webp",
+    "/Herobg2.webp",
+    "/Herobg3.webp",
+    "/Herobg4.webp",
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
