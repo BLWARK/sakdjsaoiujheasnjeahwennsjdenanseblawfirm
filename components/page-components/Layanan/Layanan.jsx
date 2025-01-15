@@ -4,13 +4,14 @@ import React, { useState } from "react";
 const layananData = {
   Litigasi: (
     <>
-      <h4 className="text-lg font-semibold mb-2">Jasa Pelayanan Hukum Litigasi</h4>
-      <p className="mb-4">Terdiri dari:</p>
-      <ul className="list-disc list-inside space-y-2">
-        <li>
-          <strong>Penanganan kasus Perdata, Niaga, Perburuhan dan Tata Usaha Negara:</strong>
-          <ul className="list-disc list-inside pl-6 space-y-1">
-            <li>Sengketa tanah kepemilikan, sewa – menyewa, jual beli, perijinan, dll</li>
+      <h4 className="2xl:text-2xl xl:text-2xl lg:text-2xl md:text-xl text-2xl font-bold mb-2">Jasa Pelayanan Hukum Litigasi</h4>
+      
+      <ul className="list-disc list-inside space-y-4">
+        
+          <p className="text-base font-bold">Penanganan kasus Perdata, Niaga, Perburuhan dan Tata Usaha Negara:</p>
+          <ul className="list-disc list-inside 2xl:pl-6 pl-0 space-y-2 2xl:text-lg text-sm ">
+            
+            <li>Sengketa tanah kepemilikan, sewa menyewa, jual beli, perijinan, dll</li>
             <li>Sengketa perusahaan</li>
             <li>Sengketa Perbankan, lelang, cessie</li>
             <li>Sengketa Perjanjian/Kontrak</li>
@@ -21,17 +22,18 @@ const layananData = {
             <li>Sengketa Perburuhan/Ketenagakerjaan</li>
             <li>Sengketa Keputusan Tata Usaha Negara</li>
           </ul>
-        </li>
-        <li>
-          <strong>Penanganan kasus Pidana:</strong>
-          <ul className="list-disc list-inside pl-6 space-y-1">
+        
+        
+          
+        
+      </ul>
+      <p className="text-base font-bold mt-10 mb-4">Penanganan kasus Pidana:</p>
+          <ul className="list-disc list-inside 2xl:pl-6 pl-0 space-y-2 2xl:text-lg text-sm">
             <li>Mendampingi sebagai pelapor di Kepolisian</li>
             <li>Mendampingi tersangka di Kepolisian dan Kejaksaan sebagai penasehat hukum</li>
             <li>Mendampingi terdakwa di Pengadilan, pada semua tingkatan</li>
             <li>Menangani perkara tindak pidana TIPIKOR</li>
           </ul>
-        </li>
-      </ul>
       <p className="mt-4 text-sm text-gray-500">
         <em>
           Catatan: Semua ketentuan ini merupakan profesional fee, dan besarnya fee akan ditentukan
@@ -42,8 +44,8 @@ const layananData = {
   ),
   "Non Litigasi": (
     <>
-      <h4 className="text-lg font-semibold mb-2">Jasa Pelayanan Hukum Non Litigasi</h4>
-      <ul className="list-disc list-inside space-y-2">
+      <h4 className="2xl:text-2xl xl:text-2xl lg:text-2xl md:text-xl text-2xl font-bold mb-2">Jasa Pelayanan Hukum Non Litigasi</h4>
+      <ul className="list-disc list-inside 2xl:pl-6 pl-0 2xl:text-lg text-sm space-y-4">
         <li>Memberikan jasa Konsultasi Hukum kepada Perusahaan maupun perorangan</li>
         <li>
           Menerima permintaan penyusunan legal opinion tentang kasus perdata maupun pidana atau
@@ -59,8 +61,8 @@ const layananData = {
   ),
   "Retainer Client": (
     <>
-      <h4 className="text-lg font-semibold mb-2">Ketentuan Khusus Retainer Client</h4>
-      <ul className="list-disc list-inside space-y-2">
+      <h4 className="2xl:text-2xl xl:text-2xl lg:text-2xl md:text-xl text-2xl font-bold mb-2">Ketentuan Khusus Retainer Client</h4>
+      <ul className="list-disc list-inside 2xl:pl-6 pl-0 2xl:text-lg text-sm space-y-4">
         <li>Menangani permasalahan hukum klien</li>
         <li>Klien menerima pelayanan hukum dari kami dengan adanya kesepakatan bersama</li>
         <li>
@@ -97,7 +99,7 @@ const Layanan = () => {
             <button
               key={item}
               onClick={() => setSelected(item)}
-              className={`px-6 py-2 rounded-lg font-semibold transition ${
+              className={`px-6 py-2 rounded-lg font-semibold transition 2xl:text-lg xl:text-lg lg:text-lg md:text-base text-xs ${
                 selected === item
                   ? "bg-main text-white shadow-lg"
                   : "bg-white text-gray-700 border border-gray-300"

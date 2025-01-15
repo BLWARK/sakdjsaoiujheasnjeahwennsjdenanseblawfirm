@@ -1,27 +1,40 @@
-import React from "react";
+"use client"
+import React, { useEffect } from "react";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const AboutUs = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   return (
-    <section className="w-full h-screen flex items-center justify-center bg-gradient-to-tr from-black to-emerald-800">
+    <section className="w-full 2xl:h-screen h-full flex items-center justify-center bg-gradient-to-tr from-black to-emerald-800">
       <div className="container mx-auto px-10 flex flex-col md:flex-row items-center">
         {/* Left Side - Image */}
-        <div className="md:w-1/2 flex justify-center">
+        <div
+          className="md:w-1/2 flex 2xl:justify-center justify-start"
+          data-aos="fade-right" // Animasi dari kanan ke kiri
+        >
           <Image
             src="/PD.png"
             alt="Professional Lawyer"
             width={500}
             height={700}
-            className="object-cover "
+            className="object-cover"
           />
         </div>
 
         {/* Right Side - Text */}
-        <div className="md:w-1/2 mt-10 md:mt-0 md:pl-16 text-left justify-start items-start flex flex-col">
-          <h2 className="text-[42px] font-bold text-main mb-4">
+        <div
+          className="md:w-1/2 mt-10 md:mt-0 md:pl-16 text-left justify-start items-start flex flex-col"
+          data-aos="fade-left" // Animasi dari kiri ke kanan
+        >
+          <h2 className="2xl:text-[42px] xl:text-[42px] lg:text-[36px] md:text-[36px] text-[36px] font-bold text-main ">
             XYZ LAW FIRM
           </h2>
-          <p className="text-white mb-4">
+          <p className="text-white py-8 2xl:text-xl xl:text-base lg:text-base md:text-sm  text-xs">
             XYZ Law Firm didirikan pada tahun 2024 dengan semangat baru untuk
             memberikan layanan hukum yang berkualitas dan terpercaya. Meskipun
             tergolong baru, firma ini didukung oleh tim pengacara yang telah
@@ -33,20 +46,11 @@ const AboutUs = () => {
             yang diberikan. Serta menghadirkan tim yang terdiri dari para
             profesional berpengalaman di berbagai bidang hukum, kami bertujuan
             untuk menjadi mitra strategis yang mampu membantu klien menghadapi
-            tantangan hukum yang semakin beragam dan kompleks.
+            tantangan hukum yang semakin beragam dan kompleks....
           </p>
-          <p className="text-white mb-6">
-            Latar belakang berdirinya XYZ Law Firm didorong oleh kebutuhan akan
-            solusi hukum yang adaptif, inovatif, dan responsif terhadap
-            tantangan hukum di era modern. Kami menyadari bahwa dunia hukum
-            terus berubah seiring dengan perkembangan teknologi, bisnis, dan
-            peraturan yang semakin kompleks. Untuk itu, XYZ Law Firm hadir
-            dengan visi untuk tidak hanya memenuhi, tetapi juga melampaui
-            harapan klien dalam memberikan layanan hukum yang strategis dan
-            berfokus pada hasil.
-          </p>
-         
-          <button className="border-2 border-main  px-6 py-2 rounded hover:bg-main  hover:text-white text-main transition duration-300">
+          
+
+          <button className="border-[1px] border-main 2xl:px-8 2xl:py-4 px-8 py-2 rounded hover:bg-main hover:text-white text-main transition duration-300 mb-10">
             READ MORE
           </button>
         </div>

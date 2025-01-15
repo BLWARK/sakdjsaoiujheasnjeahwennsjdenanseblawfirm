@@ -1,5 +1,5 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 const HeroSection = () => {
   return (
@@ -7,23 +7,54 @@ const HeroSection = () => {
       {/* Background Image with Zoom Out Animation */}
       <div className="absolute w-full h-full inset-0">
         <Image
-          src="/hegobgtest2.webp" // Ganti dengan gambar hero Anda
+          src="/herobgtest3.webp" // Ganti dengan gambar hero Anda
           alt="Law Firm Hero"
-          layout="fill"
-          objectFit="cover"
-          className="zoom-out "
+          fill
+          className="zoom-out object-cover "
         />
       </div>
 
       {/* Overlay */}
-      <div className="  absolute inset-0 bg-black/70  flex flex-col justify-center items-start text-left px-20 md:px-52 py-20 gap-10">
-        <h1 className="text-white text-4xl md:text-6xl font-bold mb-4">
-          Perlindungan Hukum Terpercaya
-        </h1>
-        <p className="text-white text-lg md:text-xl mb-6 max-w-2xl">
-          Mitra hukum yang berdedikasi untuk melindungi hak dan kepentingan Anda.
+      <div className="  absolute inset-0 bg-black/70  flex flex-col justify-center items-start text-left px-10 md:px-52 2xl:py-20 py-4 gap-8 ">
+      <p
+          className="text-main font-bold text-lg md:text-2xl  max-w-2xl opacity-0"
+          style={{
+            animation: "slide-up 1.5s ease-out forwards",
+            animationDelay: "0.7s",
+          }}
+        >
+          XYZ Law Firm
         </p>
-        <button className="bg-main hover:bg-hover text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+        <div className="h-1 w-[60px] bg-main rounded-full opacity-0" style={{
+            animation: "slide-up 1.5s ease-out forwards",
+            animationDelay: "0.7s",
+          }}></div>
+        <h1
+          className="text-white text-4xl md:text-6xl font-bold 2xl:mb-4 opacity-0"
+          style={{
+            animation: "slide-up 1.5s ease-out forwards",
+            animationDelay: "1.0s",
+          }}
+        >
+          Perlindungan Hukum <span className="text-main"> Terpercaya </span>
+        </h1>
+        <p
+          className="text-white text-lg md:text-xl mb-6 max-w-2xl opacity-0"
+          style={{
+            animation: "slide-up 1.5s ease-out forwards",
+            animationDelay: "1.5s",
+          }}
+        >
+          Mitra hukum yang berdedikasi untuk melindungi hak dan kepentingan
+          Anda.
+        </p>
+        <button
+          className="bg-main hover:bg-hover text-white font-semibold py-3 px-6 rounded-lg transition duration-300 opacity-0   "
+          style={{
+            animation: "slide-up 1.5s ease-out forwards",
+            animationDelay: "2.0s",
+          }}
+        >
           Hubungi Kami
         </button>
       </div>

@@ -14,23 +14,23 @@ const icons = {
 
 const Services = () => {
   return (
-    <section className="w-full bg-gradient-to-tr from-black to-emerald-800 py-16 text-main">
+    <section className="w-full bg-gradient-to-tr from-black to-emerald-800 py-16 text-main flex flex-col justify-center items-center">
       {/* Header Section */}
-      <div className="text-center mb-12">
-        <h1 className="text-5xl font-playfair font-bold mb-4">Area Praktik Kami</h1>
-        <p className="text-lg">
+      <div className="2xl:text-center text-left mb-12">
+        <h1 className="2xl:text-5xl xl:text-5xl lg:text-4xl md:text-4xl text-3xl font-playfair font-bold mb-4">Area Praktik Kami</h1>
+        <p className="2xl:text-lg text-xs text-white">
           Discover the range of legal services we offer to support you.
         </p>
       </div>
 
       {/* Practice Areas Section */}
-      <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-playfair font-bold mb-4">- Hukum Privat</h2>
+      <div className="container mx-auto 2xl:px-10 xl:px-10 lg:px-10 md:px-10 px-4">
+        <h2 className="2xl:text-5xl xl:text-5xl lg:text-4xl md:text-4xl text-3xl  font-playfair font-bold mb-4">- Hukum Privat</h2>
 
         <div className="mt-10">
           {privateLawServices.map((category, index) => (
             <div key={index}>
-              <h3 className="text-2xl font-bold mt-10 mb-6">{category.category}</h3>
+              <h3 className="2xl:text-2xl text-xl font-bold mt-10 mb-6">{category.category}</h3>
               <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                 {category.services.map((service, idx) => {
                   const Icon = icons[service.icon]; // Ambil ikon berdasarkan nama
@@ -54,8 +54,8 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-6 mt-10">
-        <h2 className="text-3xl font-playfair font-bold mb-4">- Hukum Publik</h2>
+      <div className="container mx-auto 2xl:px-10 xl:px-10 lg:px-10 md:px-10 px-4 mt-16">
+        <h2 className="2xl:text-5xl xl:text-5xl lg:text-4xl md:text-4xl text-3xl font-playfair font-bold mb-4">- Hukum Publik</h2>
 
         <div className="mt-10">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">

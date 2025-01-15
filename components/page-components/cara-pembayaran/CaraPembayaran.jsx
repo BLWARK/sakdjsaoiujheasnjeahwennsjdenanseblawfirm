@@ -36,7 +36,7 @@ const CaraPembayaran = () => {
                 <Image
                   src={method.src}
                   alt={method.alt}
-                  layout="fill"
+                  fill
                   className="object-contain"
                 />
               </div>
