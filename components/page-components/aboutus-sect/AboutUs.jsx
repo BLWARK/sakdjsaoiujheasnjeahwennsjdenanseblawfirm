@@ -20,7 +20,7 @@ const AboutUs = () => {
           <Image
             src="/About Us-min.png"
             alt="Professional Lawyer"
-            width={500}
+            width={600}
             height={700}
             className="object-cover"
           />
