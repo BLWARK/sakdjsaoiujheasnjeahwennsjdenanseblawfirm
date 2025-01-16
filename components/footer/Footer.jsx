@@ -65,16 +65,24 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Hukum Benda */}
-          <div className="flex flex-col space-y-4">
+           {/* Hukum Benda */}
+           <div className="flex flex-col space-y-4">
             <h2 className="text-lg font-bold text-main">Hukum Benda</h2>
             <ul className="space-y-2">
               <li><a href="/area-praktik/hukum-benda/hukum-perjanjian" className="hover:text-main transition">Hukum Perjanjian/Perikatan</a></li>
               <li><a href="/area-praktik/hukum-benda/hak-cipta" className="hover:text-main transition">Hak Cipta, Paten dan Trade Mark</a></li>
               <li><a href="/area-praktik/hukum-benda/hukum-perusahaan" className="hover:text-main transition">Hukum Perusahaan/Niaga</a></li>
+              <li><a href="/area-praktik/hukum-benda/hukum-perbankan" className="hover:text-main transition">Hukum Perbankan</a></li>
+              <li><a href="/area-praktik/hukum-benda/kepailitan" className="hover:text-main transition">Kepailitan</a></li>
+              <li><a href="/area-praktik/hukum-benda/surat-surat-berharga" className="hover:text-main transition">Surat-surat Berharga</a></li>
+              <li><a href="/area-praktik/hukum-benda/hukum-pasar-modal" className="hover:text-main transition">Hukum Pasar Modal</a></li>
+              <li><a href="/area-praktik/hukum-benda/hukum-asuransi" className="hover:text-main transition">Hukum Asuransi</a></li>
+              <li><a href="/area-praktik/hukum-benda/hukum-kesehatan" className="hover:text-main transition">Hukum Kesehatan</a></li>
+              <li><a href="/area-praktik/hukum-benda/hukum-ketenagakerjaan" className="hover:text-main transition">Hukum Ketenagakerjaan</a></li>
+              <li><a href="/area-praktik/hukum-benda/arbitrase" className="hover:text-main transition">Arbitrase</a></li>
             </ul>
           </div>
-
+          
           {/* Hukum Publik */}
           <div className="flex flex-col space-y-4">
             <h2 className="text-lg font-bold text-main">Hukum Publik</h2>
