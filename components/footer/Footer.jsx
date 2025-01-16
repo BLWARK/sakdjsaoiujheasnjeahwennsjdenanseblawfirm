@@ -1,6 +1,7 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa"; // Import ikon dari react-icons
 
 const Footer = () => {
   // Fungsi untuk scroll ke elemen dengan ID
@@ -19,10 +20,26 @@ const Footer = () => {
       <div className="py-16 px-4">
         <div className="container mx-auto 2xl:px-0 xl:px-10 px-2 grid grid-cols-1 2xl:grid-cols-5 xl:grid-cols-1 lg:grid-cols-1 md:grid-cols-1 gap-8">
           {/* Informasi Perusahaan */}
-          <div className="flex flex-col space-y-4">
+          <div className="flex flex-col space-y-6">
             <Image src="/Logo XYZ Law Firm.png" alt="Law Firm Logo" width={150} height={150} />
-            <p>Wisma Aria, Lantai 3, Ruang 302, Jl Hos Cokroaminoto No. 81 Menteng, Jakarta Pusat</p>
-            <p>Telp: +62 813-8852-2219</p>
+            
+            {/* Alamat */}
+            <div className="flex items-start space-x-2">
+             
+              <p className="text-xs">Wisma Aria, Lantai 3, Ruang 302, Jl Hos Cokroaminoto No. 81 Menteng, Jakarta Pusat</p>
+            </div>
+
+            {/* Nomor Telepon */}
+            <div className="flex items-center space-x-2">
+              <FaPhoneAlt className="text-main text-lg" />
+              <p className="text-xs">Telp: +62 813-8852-2219</p>
+            </div>
+
+            {/* Email */}
+            <div className="flex items-center space-x-2">
+              <FaEnvelope className="text-main text-lg" />
+              <p className="text-xs">office@xyzlawfirm.id</p>
+            </div>
           </div>
 
           {/* Navigasi */}
@@ -35,12 +52,11 @@ const Footer = () => {
               <li><button onClick={() => scrollToSection("team")} className="hover:text-main transition">Team</button></li>
               <li><button onClick={() => scrollToSection("case")} className="hover:text-main transition">Case</button></li>
               <li><button onClick={() => scrollToSection("layanan")} className="hover:text-main transition">Layanan</button></li>
-              {/* <li><button onClick={() => scrollToSection("pembayaran")} className="hover:text-main transition">Pembayaran</button></li> */}
             </ul>
           </div>
 
-           {/* Hukum Keluarga */}
-           <div className="flex flex-col space-y-4">
+          {/* Hukum Keluarga */}
+          <div className="flex flex-col space-y-4">
             <h2 className="text-lg font-bold text-main">Hukum Keluarga</h2>
             <ul className="space-y-2">
               <li><a href="/area-praktik/hukum-keluarga/perceraian" className="hover:text-main transition">Perceraian</a></li>
@@ -56,18 +72,10 @@ const Footer = () => {
               <li><a href="/area-praktik/hukum-benda/hukum-perjanjian" className="hover:text-main transition">Hukum Perjanjian/Perikatan</a></li>
               <li><a href="/area-praktik/hukum-benda/hak-cipta" className="hover:text-main transition">Hak Cipta, Paten dan Trade Mark</a></li>
               <li><a href="/area-praktik/hukum-benda/hukum-perusahaan" className="hover:text-main transition">Hukum Perusahaan/Niaga</a></li>
-              <li><a href="/area-praktik/hukum-benda/hukum-perbankan" className="hover:text-main transition">Hukum Perbankan</a></li>
-              <li><a href="/area-praktik/hukum-benda/kepailitan" className="hover:text-main transition">Kepailitan</a></li>
-              <li><a href="/area-praktik/hukum-benda/surat-surat-berharga" className="hover:text-main transition">Surat-surat Berharga</a></li>
-              <li><a href="/area-praktik/hukum-benda/hukum-pasar-modal" className="hover:text-main transition">Hukum Pasar Modal</a></li>
-              <li><a href="/area-praktik/hukum-benda/hukum-asuransi" className="hover:text-main transition">Hukum Asuransi</a></li>
-              <li><a href="/area-praktik/hukum-benda/hukum-kesehatan" className="hover:text-main transition">Hukum Kesehatan</a></li>
-              <li><a href="/area-praktik/hukum-benda/hukum-ketenagakerjaan" className="hover:text-main transition">Hukum Ketenagakerjaan</a></li>
-              <li><a href="/area-praktik/hukum-benda/arbitrase" className="hover:text-main transition">Arbitrase</a></li>
             </ul>
           </div>
 
-          {/* Hukum Politik */}
+          {/* Hukum Publik */}
           <div className="flex flex-col space-y-4">
             <h2 className="text-lg font-bold text-main">Hukum Publik</h2>
             <ul className="space-y-2">
