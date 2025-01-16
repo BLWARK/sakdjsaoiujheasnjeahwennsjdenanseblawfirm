@@ -1,11 +1,17 @@
-import React from "react";
+"use client"
+import React, { useEffect } from "react";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const AboutPage = () => {
+  useEffect(() => {
+      AOS.init({ duration: 1000, once: true });
+    }, []);
   return (
     <div className="bg-gradient-to-tr from-black to-emerald-800">
       {/* Banner */}
-      <div className="relative w-full h-[400px]">
+      <div  className="relative w-full h-[400px]">
         <Image
           src="/Herobg1.webp" // Ganti dengan path gambar banner Anda
           alt="Banner Tentang Kami"
@@ -21,7 +27,7 @@ const AboutPage = () => {
       <section className="container mx-auto px-6 py-10">
         <div className="flex flex-col md:flex-row items-center">
           {/* Foto */}
-          <div className="relative md:w-1/2 w-full ">
+          <div data-aos="fade-left" className="relative md:w-1/2 w-full ">
             <Image
               src="/About Us-min.png" // Ganti dengan path gambar Anda
               alt="Tentang Kami"
@@ -32,7 +38,7 @@ const AboutPage = () => {
           </div>
 
           {/* Isi */}
-          <div className="md:w-1/2 md:pl-12">
+          <div data-aos="fade-right" className="md:w-1/2 md:pl-12">
             <h2 className="2xl:text-4xl text-3xl font-bold text-main mb-4">XYZ LAW FIRM</h2>
             <p className="text-white mb-6">
               XYZ Law Firm didirikan pada tahun 2024 dengan semangat baru untuk
@@ -50,7 +56,7 @@ const AboutPage = () => {
             </p>
           </div>
         </div>
-        <div className="md:w-full  md:pl-12">
+        <div data-aos="fade-up" className="md:w-full  md:pl-12">
           <h2 className="text-3xl font-bold text-main mb-4">Latar belakang </h2>
           <p className="text-white mb-6">
             Latar belakang berdirinya XYZ Law Firm didorong oleh kebutuhan akan

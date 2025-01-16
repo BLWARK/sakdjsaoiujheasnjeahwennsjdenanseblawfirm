@@ -28,13 +28,13 @@ const AboutUs = () => {
 
         {/* Right Side - Text */}
         <div
-          className="md:w-1/2 mt-10 md:mt-0 md:pl-16 text-left justify-start items-start flex flex-col"
+          className="md:w-1/2  md:pl-16 text-left justify-start items-start flex flex-col"
           data-aos="fade-left" // Animasi dari kiri ke kanan
         >
           <h2 className="2xl:text-[42px] xl:text-[42px] lg:text-[36px] md:text-[36px] text-[36px] font-bold text-main ">
             XYZ LAW FIRM
           </h2>
-          <p className="text-white py-8 2xl:text-base xl:text-base lg:text-base md:text-sm  text-xs">
+          <p className="text-white py-4 2xl:text-base xl:text-base lg:text-base md:text-sm mb-4 text-xs">
             XYZ Law Firm didirikan pada tahun 2024 dengan semangat baru untuk
             memberikan layanan hukum yang berkualitas dan terpercaya. Meskipun
             tergolong baru, firma ini didukung oleh tim pengacara yang telah
@@ -50,7 +50,7 @@ const AboutUs = () => {
           </p>
           
 
-          <a href="/tentang-kami" className="border-[1px] border-main 2xl:px-8 2xl:py-4 px-8 py-2 rounded hover:bg-main hover:text-white text-main transition duration-300 mb-10">
+          <a href="/tentang-kami" className="border-[1px] border-main 2xl:px-8 2xl:py-4 px-8 py-2  rounded hover:bg-main hover:text-white text-main transition duration-300 mb-12">
             READ MORE
           </a>
         </div>
