@@ -7,7 +7,7 @@ const HeroSection = () => {
     "/Herobg1.webp",
     "/Herobg2.webp",
     "/Herobg3.webp",
-    "/Herobg4.webp",
+    "/HeroBg4.webp",
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
