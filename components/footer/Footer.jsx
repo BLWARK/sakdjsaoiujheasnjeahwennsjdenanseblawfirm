@@ -46,7 +46,7 @@ const Footer = () => {
           <div className="flex flex-col space-y-4">
             <h2 className="text-lg font-bold text-main">Navigasi</h2>
             <ul className="2xl:space-y-6 space-y-2">
-              <li><a href="#home" className="hover:text-main transition">Home</a></li>
+              <li><a href="/" className="hover:text-main transition">Home</a></li>
               <li><a href="/tentang-kami" className="hover:text-main transition">Tentang Kami</a></li>
               <li><button onClick={() => scrollToSection("services")} className="hover:text-main transition">Area Praktik</button></li>
               <li><button onClick={() => scrollToSection("team")} className="hover:text-main transition">Team</button></li>
@@ -82,7 +82,7 @@ const Footer = () => {
               <li><a href="/area-praktik/hukum-benda/arbitrase" className="hover:text-main transition">Arbitrase</a></li>
             </ul>
           </div>
-          
+
           {/* Hukum Publik */}
           <div className="flex flex-col space-y-4">
             <h2 className="text-lg font-bold text-main">Hukum Publik</h2>
